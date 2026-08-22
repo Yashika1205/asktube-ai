@@ -393,9 +393,12 @@ section[data-testid="stSidebar"] > div {
 
 def get_llm():
     from langchain_groq import ChatGroq
+    groq_key = st.secrets.get("GROQ_API_KEY", os.getenv("GROQ_API_KEY"))
+    if not groq_key:
+        raise ValueError("GROQ_API_KEY not found. Set it in Streamlit Secrets (cloud) or .env (local).")
     return ChatGroq(
-        model="llama-3.1-8b-instant",
-        api_key=os.getenv("GROQ_API_KEY")
+        model="openai/gpt-oss-20b",
+        api_key=groq_key
     )
 
 
