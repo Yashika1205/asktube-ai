@@ -462,7 +462,7 @@ with st.sidebar:
     st.markdown("<br>", unsafe_allow_html=True)
     st.markdown("""
     <div style='text-align:center; padding: 1rem 0;'>
-        <span class='powered-badge'>🦙 Llama 3.1</span>
+        <span class='powered-badge'>🤖 GPT-OSS 20B</span>
         <span class='powered-badge'>🔍 RAG</span>
         <br><br>
         <span class='powered-badge'>⚡ FAISS</span>
