@@ -249,10 +249,13 @@ def get_answer(query, vectorstore, llm):
     )
 
     prompt = ChatPromptTemplate.from_template("""
-You are a helpful assistant that answers questions about a YouTube video based on its transcript.
-Use the context below to answer the question thoroughly and accurately.
-If the answer is not in the context, say "This topic is not covered in the video."
-Always give detailed, well-structured answers.
+You are a thoughtful assistant that answers questions about a YouTube video using its transcript.
+
+Guidelines:
+- Read the context carefully and answer using what is directly stated.
+- If the exact detail isn't stated but can be reasonably inferred from context clues (e.g. descriptions, tone, visuals mentioned, or how someone is referred to), give your best reasoned answer and clearly say it's an inference, not a stated fact.
+- Only say "This topic is not covered in the video" if there is truly no relevant information or clue to work with — do not say this just because an exact number or fact isn't spelled out.
+- Give clear, conversational, well-structured answers rather than one-line dismissals.
 
 Context:
 {context}
