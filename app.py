@@ -21,8 +21,8 @@ st.markdown("""
 * { font-family: 'Inter', sans-serif; }
 
 .stApp {
-    background: #FFFBF5;
-    color: #5C4A3A;
+    background: #FFF8F0;
+    color: #4A3B32;
 }
 
 section[data-testid="stSidebar"] {
@@ -37,33 +37,33 @@ section[data-testid="stSidebar"] {
 .main-title h1 {
     font-size: 2.2rem;
     font-weight: 500;
-    color: #5C4A3A;
+    color: #4A3B32;
     margin: 0;
 }
 
 .main-title .subtitle {
-    color: #A6874F;
+    color: #8B7355;
     font-size: 0.95rem;
     margin-top: 0.3rem;
 }
 
 .stTextInput > div > div > input {
     background: #FFFFFF !important;
-    border: 1px solid #EFE0C8 !important;
+    border: 1px solid #F0DCC8 !important;
     border-radius: 10px !important;
-    color: #5C4A3A !important;
+    color: #4A3B32 !important;
     padding: 0.7rem 1rem !important;
     font-size: 0.9rem !important;
 }
 
 .stTextInput > div > div > input:focus {
-    border-color: #D98E3C !important;
-    box-shadow: 0 0 0 2px rgba(217,142,60,0.15) !important;
+    border-color: #E76F51 !important;
+    box-shadow: 0 0 0 2px rgba(231,111,81,0.15) !important;
 }
 
 .stButton > button {
-    background: linear-gradient(135deg, #D98E3C, #E8B95C) !important;
-    color: #FFFBF5 !important;
+    background: linear-gradient(135deg, #E76F51, #F4A261) !important;
+    color: #FFF8F0 !important;
     border: none !important;
     border-radius: 10px !important;
     padding: 0.6rem 1.5rem !important;
@@ -73,11 +73,11 @@ section[data-testid="stSidebar"] {
 
 .stButton > button:hover {
     transform: translateY(-1px) !important;
-    box-shadow: 0 4px 12px rgba(217,142,60,0.3) !important;
+    box-shadow: 0 4px 12px rgba(231,111,81,0.3) !important;
 }
 
 .stTabs [data-baseweb="tab-list"] {
-    background: #FFF3E0;
+    background: #FFEDE0;
     border-radius: 12px;
     padding: 4px;
     gap: 4px;
@@ -86,7 +86,7 @@ section[data-testid="stSidebar"] {
 .stTabs [data-baseweb="tab"] {
     background: transparent;
     border-radius: 9px;
-    color: #A6874F;
+    color: #8B7355;
     font-weight: 500;
     font-size: 0.85rem;
     padding: 0.5rem 1.2rem;
@@ -94,20 +94,20 @@ section[data-testid="stSidebar"] {
 
 .stTabs [aria-selected="true"] {
     background: #FFFFFF !important;
-    color: #854F0B !important;
+    color: #C1502B !important;
 }
 
 .feature-card {
     background: #FFFFFF;
-    border: 1px solid #F0E2CB;
+    border: 1px solid #F5DAD1;
     border-radius: 14px;
     padding: 1.1rem;
     margin: 0.5rem 0;
 }
 
 .timestamp-badge {
-    background: linear-gradient(135deg, #D98E3C, #E8B95C);
-    color: #FFFBF5;
+    background: linear-gradient(135deg, #E76F51, #F4A261);
+    color: #FFF8F0;
     padding: 3px 12px;
     border-radius: 20px;
     font-size: 0.75rem;
@@ -116,13 +116,13 @@ section[data-testid="stSidebar"] {
 }
 
 .source-chunk {
-    background: #FDF0D5;
-    border-left: 3px solid #D98E3C;
+    background: #FBE4DC;
+    border-left: 3px solid #E76F51;
     border-radius: 10px;
     padding: 0.8rem 1rem;
     margin: 0.4rem 0;
     font-size: 0.82rem;
-    color: #8B7355;
+    color: #8B6656;
 }
 
 .video-container {
@@ -133,7 +133,7 @@ section[data-testid="stSidebar"] {
 
 .video-container iframe {
     border-radius: 16px;
-    border: 1px solid #F0E2CB;
+    border: 1px solid #F5DAD1;
 }
 
 .stSuccess {
@@ -148,14 +148,14 @@ section[data-testid="stSidebar"] {
 
 .stChatInput > div {
     background: #FFFFFF !important;
-    border: 1px solid #EFE0C8 !important;
+    border: 1px solid #F0DCC8 !important;
     border-radius: 14px !important;
 }
 
 .powered-badge {
     display: inline-flex;
-    background: #FDF0D5;
-    color: #854F0B;
+    background: #FBE4DC;
+    color: #C1502B;
     border-radius: 20px;
     padding: 4px 12px;
     font-size: 0.75rem;
@@ -170,18 +170,18 @@ section[data-testid="stSidebar"] {
 .hero-title {
     font-size: 1.7rem;
     font-weight: 600;
-    color: #5C4A3A;
+    color: #4A3B32;
 }
 
 .hero-subtitle {
-    color: #A6874F;
+    color: #8B7355;
     font-size: 0.95rem;
     margin-bottom: 2rem;
 }
 
 .grid-card {
     background: #FFFFFF;
-    border: 1px solid #F0E2CB;
+    border: 1px solid #F5DAD1;
     border-radius: 16px;
     padding: 1.4rem;
     text-align: center;
@@ -190,12 +190,12 @@ section[data-testid="stSidebar"] {
 .grid-card-title {
     font-weight: 600;
     font-size: 1rem;
-    color: #5C4A3A;
+    color: #4A3B32;
 }
 
 .grid-card-desc {
     font-size: 0.82rem;
-    color: #A6874F;
+    color: #8B7355;
 }
 
 .chat-bubble-user {
@@ -205,8 +205,8 @@ section[data-testid="stSidebar"] {
 }
 
 .chat-bubble-user .bubble {
-    background: #D98E3C;
-    color: #FFFBF5;
+    background: #E76F51;
+    color: #FFF8F0;
     border-radius: 14px 14px 4px 14px;
     padding: 10px 14px;
     max-width: 75%;
@@ -220,12 +220,12 @@ section[data-testid="stSidebar"] {
 
 .chat-bubble-ai .bubble {
     background: #FFFFFF;
-    border: 1px solid #F0E2CB;
+    border: 1px solid #F5DAD1;
     border-radius: 14px 14px 14px 4px;
     padding: 10px 14px;
     max-width: 80%;
     font-size: 14px;
-    color: #5C4A3A;
+    color: #4A3B32;
 }
 </style>
 """, unsafe_allow_html=True)
@@ -297,7 +297,7 @@ def render_ai_bubble(text):
 # ── Header ──
 st.markdown("""
 <div class='main-title'>
-    <h1>⚡ AskTube</h1>
+    <h1> AskTube</h1>
     <p class='subtitle'>Drop a YouTube link. Ask anything. Get answers instantly.</p>
 </div>
 """, unsafe_allow_html=True)
@@ -308,20 +308,10 @@ col1, col2 = st.columns([4, 1])
 with col1:
     url = st.text_input("", placeholder="https://youtube.com/watch?v=...", label_visibility="collapsed")
 with col2:
-    load_btn = st.button("⚡ Analyze")
+    load_btn = st.button(" Analyze")
 
 topic = st.text_input("", placeholder="Search a topic to find timestamps...", label_visibility="collapsed", key="topic_input")
-topic_btn = st.button("🔎 Search Topic", key="topic_btn")
-
-st.markdown("""
-<div style='text-align:center; padding: 0.5rem 0 1rem 0;'>
-    <span class='powered-badge'>🤖 GPT-OSS 20B</span>
-    <span class='powered-badge'>🔍 RAG</span>
-    <span class='powered-badge'>⚡ FAISS</span>
-    <span class='powered-badge'>🤗 HuggingFace</span>
-</div>
-""", unsafe_allow_html=True)
-
+topic_btn = st.button(" Search Topic", key="topic_btn")
 
 # ── Load Video ──
 if load_btn and url:
@@ -418,14 +408,14 @@ if "vectorstore" in st.session_state:
                         f"<div class='feature-card'>"
                         f"<span class='timestamp-badge'>⏱ {ts}</span>"
                         f"{r['text']} "
-                        f"<a href='{yt_link}' target='_blank' style='color:#D98E3C; font-weight:600;'>▶ Jump</a>"
+                        f"<a href='{yt_link}' target='_blank' style='color:#E76F51; font-weight:600;'>▶ Jump</a>"
                         f"</div>",
                         unsafe_allow_html=True
                     )
             else:
                 st.warning(f"No mentions of **'{topic}'** found.")
         else:
-            st.markdown("<p style='color:#A6874F;'>Search a topic above to find timestamps!</p>", unsafe_allow_html=True)
+            st.markdown("<p style='color:#8B7355;'>Search a topic above to find timestamps!</p>", unsafe_allow_html=True)
 
 else:
     # Landing page
