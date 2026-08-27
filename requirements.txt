@@ -1,12 +1,10 @@
+streamlit
 langchain
-langchain-community
-langchain-google-genai
 langchain-groq
+langchain-google-genai
+langchain-community
 langchain-text-splitters
-langchain-core
-youtube-transcript-api
 faiss-cpu
 sentence-transformers
-streamlit
+youtube-transcript-api[proxy]
 python-dotenv
-google-generativeai
