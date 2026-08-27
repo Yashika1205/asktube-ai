@@ -1,4 +1,7 @@
+import os
+import streamlit as st
 from youtube_transcript_api import YouTubeTranscriptApi
+from youtube_transcript_api.proxies import WebshareProxyConfig
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import FAISS
 from langchain_community.embeddings import HuggingFaceEmbeddings
@@ -13,7 +16,12 @@ def get_video_id(url):
 
 
 def get_transcript(video_id):
-    ytt = YouTubeTranscriptApi()
+    ytt = YouTubeTranscriptApi(
+        proxy_config=WebshareProxyConfig(
+            proxy_username=st.secrets.get("WEBSHARE_USERNAME", os.getenv("WEBSHARE_USERNAME")),
+            proxy_password=st.secrets.get("WEBSHARE_PASSWORD", os.getenv("WEBSHARE_PASSWORD")),
+        )
+    )
     try:
         transcript_list = ytt.list(video_id)
         try:
